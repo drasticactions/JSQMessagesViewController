@@ -681,12 +681,6 @@ JSQMessagesKeyboardControllerDelegate>
 
 - (BOOL)collectionView:(JSQMessagesCollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    //  disable menu for media messages
-    id<JSQMessageData> messageItem = [collectionView.dataSource collectionView:collectionView messageDataForItemAtIndexPath:indexPath];
-    if ([messageItem isMediaMessage]) {
-        return NO;
-    }
-
     self.selectedIndexPathForMenu = indexPath;
 
     //  textviews are selectable to allow data detectors
