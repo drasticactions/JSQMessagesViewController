@@ -228,6 +228,15 @@
 
 - (BOOL)canPerformAction:(SEL)action withSender:(id)sender {
     [UIMenuController sharedMenuController].menuItems = nil;
-    return [super canPerformAction:action withSender:sender];
+
+    BOOL(^superImp)() = ^() {
+        return [super canPerformAction:action withSender:sender];
+    };
+
+    if (action != @selector(paste:) || !self.jsq_pasteDelegate) {
+        return superImp();
+    }
+
+    return [self.jsq_pasteDelegate composerTextView:self canPasteWithSender:sender] || superImp();
 }
 @end
