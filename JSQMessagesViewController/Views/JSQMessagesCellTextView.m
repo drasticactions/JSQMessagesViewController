@@ -42,6 +42,20 @@
                                  NSUnderlineStyleAttributeName : @(NSUnderlineStyleSingle | NSUnderlinePatternSolid) };
 }
 
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
+{
+    //Enable link selection and nothing else. https://stackoverflow.com/a/44878203
+    //Gesture recognizers will pick up everything else
+    UITextPosition *position = [self closestPositionToPoint:point];
+    if (position == nil) { return false; }
+    UITextRange *range = [self.tokenizer rangeEnclosingPosition:position withGranularity:UITextGranularityCharacter inDirection:UITextLayoutDirectionLeft];
+    if (range == nil) { return false; }
+
+    NSInteger idx = [self offsetFromPosition:self.beginningOfDocument toPosition:range.start];
+    BOOL isLink = [self.attributedText attribute:NSLinkAttributeName atIndex:idx effectiveRange:nil] != nil;
+    return isLink;
+}
+
 - (void)setSelectedRange:(NSRange)selectedRange
 {
     //  attempt to prevent selecting text
