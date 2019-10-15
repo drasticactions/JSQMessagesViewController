@@ -941,9 +941,9 @@ JSQMessagesKeyboardControllerDelegate>
         }
             break;
         case UIGestureRecognizerStateChanged:
+        case UIGestureRecognizerStateEnded:
             break;
         case UIGestureRecognizerStateCancelled:
-        case UIGestureRecognizerStateEnded:
         case UIGestureRecognizerStateFailed:
             [self.keyboardController beginListeningForKeyboard];
             if (self.textViewWasFirstResponderDuringInteractivePop) {
