@@ -178,6 +178,11 @@ JSQMessagesKeyboardControllerDelegate>
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
 
+    // ES: iOS 15 changes on Oct 1, 2021
+    // These defaults changed and the insets are all managed in this library anyway
+    self.collectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    self.collectionView.automaticallyAdjustsScrollIndicatorInsets = NO;
+
     self.inputToolbar.delegate = self;
     self.inputToolbar.contentView.textView.placeHolder = [NSBundle jsq_localizedStringForKey:@"new_message"];
 

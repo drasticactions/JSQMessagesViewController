@@ -107,8 +107,6 @@ static NSMutableSet *jsqMessagesCollectionViewCellActions = nil;
 {
     [super awakeFromNib];
 
-    [self setTranslatesAutoresizingMaskIntoConstraints:NO];
-
     self.backgroundColor = [UIColor whiteColor];
 
     self.cellTopLabelHeightConstraint.constant = 0.0f;
