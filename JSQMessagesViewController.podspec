@@ -5,6 +5,9 @@ Pod::Spec.new do |s|
     s.license = 'MIT'
     s.platform = :ios, '10.0'
 
+    s.authors = "Jesse Squires; Unlisted Mobile, Inc."
+    s.homepage = "https://github.com/unlistedmobile/JSQMessagesViewController"
+
     s.source = { :git => 'https://github.com/unlistedmobile/JSQMessagesViewController.git', :tag => s.version }
     s.source_files = 'JSQMessagesViewController/**/*.{h,m}'
 
