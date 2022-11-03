@@ -33,9 +33,9 @@
     CGFloat dr, dg, db, da;
     [darkColor getRed:&dr green:&dg blue:&db alpha:&da];
     
-    XCTAssertEqual(dr, r - darkeningValue, @"Red values should be equal");
-    XCTAssertEqual(dg, g - darkeningValue, @"Green values should be equal");
-    XCTAssertEqual(db, b - darkeningValue, @"Blue values should be equal");
+    XCTAssertEqualWithAccuracy(dr, r - darkeningValue, 0.01, @"Red values should be equal");
+    XCTAssertEqualWithAccuracy(dg, g - darkeningValue, 0.01, @"Green values should be equal");
+    XCTAssertEqualWithAccuracy(db, b - darkeningValue, 0.01, @"Blue values should be equal");
     XCTAssertEqual(da, a, @"Alpha values should be equal");
 }
 
@@ -52,9 +52,9 @@
     // THEN: the RGB values are floored to zero instead of being negative
     CGFloat dr, dg, db, da;
     [darkColor getRed:&dr green:&dg blue:&db alpha:&da];
-    XCTAssertEqual(dr, r - darkeningValue, @"Red values should be equal");
-    XCTAssertEqual(dg, 0.0f, @"Green values should be floored to zero");
-    XCTAssertEqual(db, b - darkeningValue, @"Blue values should be equal");
+    XCTAssertEqualWithAccuracy(dr, r - darkeningValue, 0.01, @"Red values should be equal");
+    XCTAssertEqualWithAccuracy(dg, 0.0f, 0.01, @"Green values should be floored to zero");
+    XCTAssertEqualWithAccuracy(db, b - darkeningValue, 0.01, @"Blue values should be equal");
     XCTAssertEqual(da, a, @"Alpha values should be equal");
 }
 
