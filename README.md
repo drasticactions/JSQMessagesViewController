@@ -28,8 +28,7 @@ See the [website](http://jessesquires.github.io/JSQMessagesViewController) for t
 - Easy customization and extension for clients
 
 ## Dependencies
-
-* [JSQSystemSoundPlayer][playerLink]
+None
 
 ## Requirements
 
@@ -38,17 +37,12 @@ See the [website](http://jessesquires.github.io/JSQMessagesViewController) for t
 
 ## Installation
 
-### [CocoaPods](https://cocoapods.org/) (recommended)
+This fork removed Cocoapods support in favor of SPM:
+### Swift Package Manager
 
-````ruby
-# For latest release in cocoapods
-pod 'JSQMessagesViewController'
-
-# Latest on develop
-pod 'JSQMessagesViewController', :git => 'https://github.com/jessesquires/JSQMessagesViewController.git', :branch => 'develop'
-
-# For version 5.3.2
-pod 'JSQMessagesViewController', :git => 'https://github.com/jessesquires/JSQMessagesViewController', :branch => 'version_5.3.2_patch'
+Add the package at:
+````sh
+https://github.com/unlistedmobile/JSQMessagesViewController
 ````
 
 ## Getting Started
