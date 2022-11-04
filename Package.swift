@@ -16,7 +16,10 @@ let package = Package(
     targets: [
         .target(
             name: "JSQMessagesViewController",
-            path: "JSQMessagesViewController"
+            path: "JSQMessagesViewController",
+            resources: [
+                .process("Assets/JSQMessagesAssets.bundle")
+            ]
         )
     ]
 )

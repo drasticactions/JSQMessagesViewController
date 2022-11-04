@@ -24,7 +24,7 @@
 
 + (NSBundle *)jsq_messagesBundle
 {
-    return [NSBundle bundleForClass:[JSQMessagesViewController class]];
+    return SWIFTPM_MODULE_BUNDLE;
 }
 
 + (NSBundle *)jsq_messagesAssetBundle

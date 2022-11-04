@@ -47,7 +47,7 @@ const CGFloat kJSQMessagesToolbarContentViewHorizontalSpacingDefault = 8.0f;
 + (UINib *)nib
 {
     return [UINib nibWithNibName:NSStringFromClass([JSQMessagesToolbarContentView class])
-                          bundle:[NSBundle bundleForClass:[JSQMessagesToolbarContentView class]]];
+                          bundle:SWIFTPM_MODULE_BUNDLE];
 }
 
 #pragma mark - Initialization
