@@ -23,7 +23,7 @@
 
 #import "JSQMessagesKeyboardController.h"
 
-#import "UIDevice+JSQMessages.h"
+#import "../Categories/UIDevice+JSQMessages.h"
 
 
 NSString * const JSQMessagesKeyboardControllerNotificationKeyboardDidChangeFrame = @"JSQMessagesKeyboardControllerNotificationKeyboardDidChangeFrame";

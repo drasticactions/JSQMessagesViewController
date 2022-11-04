@@ -16,7 +16,7 @@
 //  Released under an MIT license: http://opensource.org/licenses/MIT
 //
 
-#import "JSQMessagesAvatarImage.h"
+#import "../Model/JSQMessagesAvatarImage.h"
 
 @implementation JSQMessagesAvatarImage 
 

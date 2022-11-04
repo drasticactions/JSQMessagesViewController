@@ -10,7 +10,7 @@
 
 #import <XCTest/XCTest.h>
 
-#import "UIImage+JSQMessages.h"
+#import "../Categories/UIImage+JSQMessages.h"
 
 
 @interface JSQMessagesUIImageTests : XCTestCase

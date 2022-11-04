@@ -18,10 +18,10 @@
 
 #import <UIKit/UIKit.h>
 
-#import "JSQMessagesCollectionViewFlowLayout.h"
-#import "JSQMessagesCollectionViewDelegateFlowLayout.h"
-#import "JSQMessagesCollectionViewDataSource.h"
-#import "JSQMessagesCollectionViewCell.h"
+#import "../Layout/JSQMessagesCollectionViewFlowLayout.h"
+#import "../Model/JSQMessagesCollectionViewDelegateFlowLayout.h"
+#import "../Model/JSQMessagesCollectionViewDataSource.h"
+#import "../Views/JSQMessagesCollectionViewCell.h"
 
 @class JSQMessagesTypingIndicatorFooterView;
 @class JSQMessagesLoadEarlierHeaderView;

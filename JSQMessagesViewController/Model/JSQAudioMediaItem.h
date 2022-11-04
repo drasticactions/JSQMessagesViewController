@@ -17,7 +17,7 @@
 //
 
 #import "JSQMediaItem.h"
-#import "JSQAudioMediaViewAttributes.h"
+#import "../Layout/JSQAudioMediaViewAttributes.h"
 
 #import <AVFoundation/AVFoundation.h>
 

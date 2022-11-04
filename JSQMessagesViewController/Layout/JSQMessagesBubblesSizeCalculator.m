@@ -18,12 +18,12 @@
 
 #import "JSQMessagesBubblesSizeCalculator.h"
 
-#import "JSQMessagesCollectionView.h"
-#import "JSQMessagesCollectionViewDataSource.h"
-#import "JSQMessagesCollectionViewFlowLayout.h"
-#import "JSQMessageData.h"
+#import "../Views/JSQMessagesCollectionView.h"
+#import "../Model/JSQMessagesCollectionViewDataSource.h"
+#import "../Layout/JSQMessagesCollectionViewFlowLayout.h"
+#import "../Model/JSQMessageData.h"
 
-#import "UIImage+JSQMessages.h"
+#import "../Categories/UIImage+JSQMessages.h"
 
 
 @interface JSQMessagesBubblesSizeCalculator ()

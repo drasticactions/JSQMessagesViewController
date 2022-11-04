@@ -18,7 +18,7 @@
 
 #import "JSQMessagesAvatarImageFactory.h"
 
-#import "UIColor+JSQMessages.h"
+#import "../Categories/UIColor+JSQMessages.h"
 
 
 @implementation JSQMessagesAvatarImageFactory

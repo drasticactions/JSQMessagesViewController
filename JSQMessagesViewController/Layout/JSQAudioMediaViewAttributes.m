@@ -18,8 +18,8 @@
 
 #import "JSQAudioMediaViewAttributes.h"
 
-#import "UIImage+JSQMessages.h"
-#import "UIColor+JSQMessages.h"
+#import "../Categories/UIImage+JSQMessages.h"
+#import "../Categories/UIColor+JSQMessages.h"
 
 @implementation JSQAudioMediaViewAttributes
 

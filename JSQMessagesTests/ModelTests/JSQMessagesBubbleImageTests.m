@@ -10,9 +10,9 @@
 
 #import <XCTest/XCTest.h>
 
-#import "JSQMessagesBubbleImage.h"
+#import "../Model/JSQMessagesBubbleImage.h"
 
-#import "UIImage+JSQMessages.h"
+#import "../Categories/UIImage+JSQMessages.h"
 
 
 @interface JSQMessagesBubbleImageTests : XCTestCase

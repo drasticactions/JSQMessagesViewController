@@ -16,7 +16,7 @@
 //  Released under an MIT license: http://opensource.org/licenses/MIT
 //
 
-#import "JSQMessagesBubbleImage.h"
+#import "../Model/JSQMessagesBubbleImage.h"
 
 @implementation JSQMessagesBubbleImage
 

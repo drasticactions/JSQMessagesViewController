@@ -10,8 +10,8 @@
 
 #import <XCTest/XCTest.h>
 
-#import "JSQMessagesCollectionView.h"
-#import "JSQMessagesCollectionViewFlowLayout.h"
+#import "../Views/JSQMessagesCollectionView.h"
+#import "../Layout/JSQMessagesCollectionViewFlowLayout.h"
 
 
 @interface JSQMessagesCollectionViewTests : XCTestCase

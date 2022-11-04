@@ -21,18 +21,18 @@
 //  https://github.com/AshFurrow/ASHSpringyCollectionView
 //
 
-#import "JSQMessagesCollectionViewFlowLayout.h"
+#import "../Layout/JSQMessagesCollectionViewFlowLayout.h"
 
-#import "JSQMessageData.h"
+#import "../Model/JSQMessageData.h"
 
-#import "JSQMessagesCollectionView.h"
-#import "JSQMessagesCollectionViewCell.h"
+#import "../Views/JSQMessagesCollectionView.h"
+#import "../Views/JSQMessagesCollectionViewCell.h"
 
-#import "JSQMessagesCollectionViewLayoutAttributes.h"
-#import "JSQMessagesCollectionViewFlowLayoutInvalidationContext.h"
-#import "JSQMessagesBubblesSizeCalculator.h"
+#import "../Layout/JSQMessagesCollectionViewLayoutAttributes.h"
+#import "../Layout/JSQMessagesCollectionViewFlowLayoutInvalidationContext.h"
+#import "../Layout/JSQMessagesBubblesSizeCalculator.h"
 
-#import "UIImage+JSQMessages.h"
+#import "../Categories/UIImage+JSQMessages.h"
 
 
 const CGFloat kJSQMessagesCollectionViewCellLabelHeightDefault = 20.0f;

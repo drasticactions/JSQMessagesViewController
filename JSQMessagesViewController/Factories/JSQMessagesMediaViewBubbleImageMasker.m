@@ -16,7 +16,7 @@
 //  Released under an MIT license: http://opensource.org/licenses/MIT
 //
 
-#import "JSQMessagesMediaViewBubbleImageMasker.h"
+#import "../Factories/JSQMessagesMediaViewBubbleImageMasker.h"
 
 #import "JSQMessagesBubbleImageFactory.h"
 

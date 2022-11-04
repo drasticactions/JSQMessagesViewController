@@ -10,7 +10,7 @@
 
 #import <XCTest/XCTest.h>
 
-#import "JSQMessagesAvatarImage.h"
+#import "../Model/JSQMessagesAvatarImage.h"
 
 
 @interface JSQMessagesAvatarImageTests : XCTestCase

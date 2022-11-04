@@ -18,10 +18,10 @@
 
 #import <UIKit/UIKit.h>
 
-#import "JSQMessagesCollectionView.h"
-#import "JSQMessagesCollectionViewFlowLayout.h"
-#import "JSQMessagesInputToolbar.h"
-#import "JSQMessagesKeyboardController.h"
+#import "../Views/JSQMessagesCollectionView.h"
+#import "../Layout/JSQMessagesCollectionViewFlowLayout.h"
+#import "../Views/JSQMessagesInputToolbar.h"
+#import "../Controllers/JSQMessagesKeyboardController.h"
 
 /**
  *  The `JSQMessagesViewController` class is an abstract class that represents a view controller whose content consists of

@@ -12,7 +12,7 @@
 
 #import "JSQMessagesToolbarButtonFactory.h"
 
-#import "UIColor+JSQMessages.h"
+#import "../Categories/UIColor+JSQMessages.h"
 
 
 @interface JSQMessagesToolbarButtonFactoryTests : XCTestCase

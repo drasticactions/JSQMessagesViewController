@@ -18,8 +18,8 @@
 
 #import "JSQMediaItem.h"
 
-#import "JSQMessagesMediaPlaceholderView.h"
-#import "JSQMessagesMediaViewBubbleImageMasker.h"
+#import "../Views/JSQMessagesMediaPlaceholderView.h"
+#import "../Factories/JSQMessagesMediaViewBubbleImageMasker.h"
 
 
 @interface JSQMediaItem ()

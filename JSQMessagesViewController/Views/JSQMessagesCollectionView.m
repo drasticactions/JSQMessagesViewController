@@ -16,16 +16,16 @@
 //  Released under an MIT license: http://opensource.org/licenses/MIT
 //
 
-#import "JSQMessagesCollectionView.h"
+#import "../Views/JSQMessagesCollectionView.h"
 
-#import "JSQMessagesCollectionViewFlowLayout.h"
+#import "../Layout/JSQMessagesCollectionViewFlowLayout.h"
 #import "JSQMessagesCollectionViewCellIncoming.h"
 #import "JSQMessagesCollectionViewCellOutgoing.h"
 
 #import "JSQMessagesTypingIndicatorFooterView.h"
 #import "JSQMessagesLoadEarlierHeaderView.h"
 
-#import "UIColor+JSQMessages.h"
+#import "../Categories/UIColor+JSQMessages.h"
 
 
 @interface JSQMessagesCollectionView () <JSQMessagesLoadEarlierHeaderViewDelegate>
