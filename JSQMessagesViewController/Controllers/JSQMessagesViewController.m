@@ -561,14 +561,16 @@ JSQMessagesKeyboardControllerDelegate>
     cell.delegate = collectionView;
 
     if (!isMediaMessage) {
-        cell.textView.text = [messageItem text];
+        cell.textView.text = nil;
 
-        if ([UIDevice jsq_isCurrentDeviceBeforeiOS8]) {
-            //  workaround for iOS 7 textView data detectors bug
-            cell.textView.text = nil;
-            cell.textView.attributedText = [[NSAttributedString alloc] initWithString:[messageItem text]
-                                                                           attributes:@{ NSFontAttributeName : collectionView.collectionViewLayout.messageBubbleFont }];
-        }
+        NSMutableParagraphStyle *paragraphStyle = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
+        paragraphStyle.lineSpacing = collectionView.collectionViewLayout.messageBubbleLineSpacing;
+
+        cell.textView.attributedText = [[NSAttributedString alloc] initWithString:[messageItem text]
+                                                                       attributes:@{
+                                                                                        NSFontAttributeName : collectionView.collectionViewLayout.messageBubbleFont,
+                                                                                        NSParagraphStyleAttributeName: paragraphStyle
+                                                                                    }];
 
         NSParameterAssert(cell.textView.text != nil);
 

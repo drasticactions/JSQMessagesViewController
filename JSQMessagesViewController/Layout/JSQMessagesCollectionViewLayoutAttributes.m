@@ -26,6 +26,7 @@
     self = [super init];
     if (self) {
         _messageBubbleFont = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+        _messageBubbleLineSpacing = 24.0;
         _messageBubbleContainerViewWidth = 320.0f;
     }
     return self;
@@ -38,6 +39,13 @@
     NSParameterAssert(messageBubbleFont != nil);
     _messageBubbleFont = messageBubbleFont;
 }
+
+- (void)setMessageBubbleLineSpacing:(CGFloat)messageBubbleLineSpacing
+{
+//    NSParameterAssert(messageBubbleLineSpacing >= 0.0f);
+    _messageBubbleLineSpacing = ceilf(messageBubbleLineSpacing);
+}
+
 
 - (void)setMessageBubbleContainerViewWidth:(CGFloat)messageBubbleContainerViewWidth
 {
@@ -103,6 +111,7 @@
         JSQMessagesCollectionViewLayoutAttributes *layoutAttributes = (JSQMessagesCollectionViewLayoutAttributes *)object;
         
         if (![layoutAttributes.messageBubbleFont isEqual:self.messageBubbleFont]
+            || (int)layoutAttributes.messageBubbleLineSpacing != (int)self.messageBubbleLineSpacing
             || !UIEdgeInsetsEqualToEdgeInsets(layoutAttributes.textViewFrameInsets, self.textViewFrameInsets)
             || !UIEdgeInsetsEqualToEdgeInsets(layoutAttributes.textViewTextContainerInsets, self.textViewTextContainerInsets)
             || !CGSizeEqualToSize(layoutAttributes.incomingAvatarViewSize, self.incomingAvatarViewSize)
@@ -134,6 +143,7 @@
     }
     
     copy.messageBubbleFont = self.messageBubbleFont;
+    copy.messageBubbleLineSpacing = self.messageBubbleLineSpacing;
     copy.messageBubbleContainerViewWidth = self.messageBubbleContainerViewWidth;
     copy.textViewFrameInsets = self.textViewFrameInsets;
     copy.textViewTextContainerInsets = self.textViewTextContainerInsets;
