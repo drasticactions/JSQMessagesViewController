@@ -58,10 +58,6 @@
         _minimumBubbleWidth = minimumBubbleWidth;
         _usesFixedWidthBubbles = usesFixedWidthBubbles;
         _layoutWidthForFixedWidthBubbles = 0.0f;
-
-        // this extra inset value is needed because `boundingRectWithSize:` is slightly off
-        // see comment below
-        _additionalInset = 2;
     }
     return self;
 }
@@ -129,12 +125,8 @@
         CGFloat verticalContainerInsets = layout.messageBubbleTextViewTextContainerInsets.top + layout.messageBubbleTextViewTextContainerInsets.bottom;
         CGFloat verticalFrameInsets = layout.messageBubbleTextViewFrameInsets.top + layout.messageBubbleTextViewFrameInsets.bottom;
 
-        //  add extra 2 points of space (`self.additionalInset`), because `boundingRectWithSize:` is slightly off
-        //  not sure why. magix. (shrug) if you know, submit a PR
-        CGFloat verticalInsets = verticalContainerInsets + verticalFrameInsets + self.additionalInset;
-
-        //  same as above, an extra 2 points of magix
-        CGFloat finalWidth = MAX(stringSize.width + horizontalInsetsTotal, self.minimumBubbleWidth) + self.additionalInset;
+        CGFloat verticalInsets = verticalContainerInsets + verticalFrameInsets;
+        CGFloat finalWidth = MAX(stringSize.width + horizontalInsetsTotal, self.minimumBubbleWidth);
 
         finalSize = CGSizeMake(finalWidth, stringSize.height + verticalInsets);
     }
