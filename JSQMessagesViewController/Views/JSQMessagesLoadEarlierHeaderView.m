@@ -40,7 +40,7 @@ const CGFloat kJSQMessagesLoadEarlierHeaderViewHeight = 32.0f;
 + (UINib *)nib
 {
     return [UINib nibWithNibName:NSStringFromClass([JSQMessagesLoadEarlierHeaderView class])
-                          bundle:SWIFTPM_MODULE_BUNDLE];
+                          bundle:[NSBundle bundleForClass:[JSQMessagesLoadEarlierHeaderView class]]];
 }
 
 + (NSString *)headerReuseIdentifier

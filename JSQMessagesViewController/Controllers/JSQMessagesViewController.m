@@ -149,13 +149,13 @@ JSQMessagesKeyboardControllerDelegate>
 + (UINib *)nib
 {
     return [UINib nibWithNibName:NSStringFromClass([JSQMessagesViewController class])
-                          bundle:SWIFTPM_MODULE_BUNDLE];
+                          bundle:[NSBundle bundleForClass:[JSQMessagesViewController class]]];
 }
 
 + (instancetype)messagesViewController
 {
     return [[[self class] alloc] initWithNibName:NSStringFromClass([JSQMessagesViewController class])
-                                          bundle:SWIFTPM_MODULE_BUNDLE];
+                                          bundle:[NSBundle bundleForClass:[JSQMessagesViewController class]]];
 }
 
 + (void)initialize {

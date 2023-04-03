@@ -83,7 +83,7 @@ static NSMutableSet *jsqMessagesCollectionViewCellActions = nil;
 
 + (UINib *)nib
 {
-    return [UINib nibWithNibName:NSStringFromClass([self class]) bundle:SWIFTPM_MODULE_BUNDLE];
+    return [UINib nibWithNibName:NSStringFromClass([self class]) bundle:[NSBundle bundleForClass:[self class]]];
 }
 
 + (NSString *)cellReuseIdentifier
