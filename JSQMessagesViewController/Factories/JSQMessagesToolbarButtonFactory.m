@@ -18,9 +18,9 @@
 
 #import "JSQMessagesToolbarButtonFactory.h"
 
-#import "../Categories/UIColor+JSQMessages.h"
-#import "../Categories/UIImage+JSQMessages.h"
-#import "../Categories/NSBundle+JSQMessages.h"
+#import "UIColor+JSQMessages.h"
+#import "UIImage+JSQMessages.h"
+#import "NSBundle+JSQMessages.h"
 
 
 @implementation JSQMessagesToolbarButtonFactory

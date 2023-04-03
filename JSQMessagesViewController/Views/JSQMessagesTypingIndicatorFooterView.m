@@ -18,9 +18,9 @@
 
 #import "JSQMessagesTypingIndicatorFooterView.h"
 
-#import "../Factories/JSQMessagesBubbleImageFactory.h"
+#import "JSQMessagesBubbleImageFactory.h"
 
-#import "../Categories/UIImage+JSQMessages.h"
+#import "UIImage+JSQMessages.h"
 
 const CGFloat kJSQMessagesTypingIndicatorFooterViewHeight = 46.0f;
 

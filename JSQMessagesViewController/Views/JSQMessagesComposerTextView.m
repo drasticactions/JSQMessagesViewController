@@ -20,7 +20,7 @@
 
 #import <QuartzCore/QuartzCore.h>
 
-#import "../Categories/NSString+JSQMessages.h"
+#import "NSString+JSQMessages.h"
 
 
 @implementation JSQMessagesComposerTextView

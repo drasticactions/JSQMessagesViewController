@@ -10,7 +10,7 @@
 
 #import <XCTest/XCTest.h>
 
-#import "../Factories/JSQMessagesMediaViewBubbleImageMasker.h"
+#import "JSQMessagesMediaViewBubbleImageMasker.h"
 
 
 @interface JSQMessagesMediaViewBubbleImageMaskerTests : XCTestCase

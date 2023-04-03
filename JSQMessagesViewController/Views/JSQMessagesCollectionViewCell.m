@@ -18,12 +18,12 @@
 
 #import "JSQMessagesCollectionViewCell.h"
 
-#import "../Views/JSQMessagesCollectionViewCellIncoming.h"
-#import "../Views/JSQMessagesCollectionViewCellOutgoing.h"
-#import "../Layout/JSQMessagesCollectionViewLayoutAttributes.h"
+#import "JSQMessagesCollectionViewCellIncoming.h"
+#import "JSQMessagesCollectionViewCellOutgoing.h"
+#import "JSQMessagesCollectionViewLayoutAttributes.h"
 
-#import "../Categories/UIView+JSQMessages.h"
-#import "../Categories/UIDevice+JSQMessages.h"
+#import "UIView+JSQMessages.h"
+#import "UIDevice+JSQMessages.h"
 
 
 static NSMutableSet *jsqMessagesCollectionViewCellActions = nil;

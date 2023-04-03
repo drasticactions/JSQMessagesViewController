@@ -16,7 +16,7 @@
 //  Released under an MIT license: http://opensource.org/licenses/MIT
 //
 
-#import "../Categories/UIColor+JSQMessages.h"
+#import "UIColor+JSQMessages.h"
 
 @implementation UIColor (JSQMessages)
 

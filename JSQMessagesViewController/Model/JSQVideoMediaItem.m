@@ -18,10 +18,10 @@
 
 #import "JSQVideoMediaItem.h"
 
-#import "../Views/JSQMessagesMediaPlaceholderView.h"
-#import "../Factories/JSQMessagesMediaViewBubbleImageMasker.h"
+#import "JSQMessagesMediaPlaceholderView.h"
+#import "JSQMessagesMediaViewBubbleImageMasker.h"
 
-#import "../Categories/UIImage+JSQMessages.h"
+#import "UIImage+JSQMessages.h"
 
 
 @interface JSQVideoMediaItem ()

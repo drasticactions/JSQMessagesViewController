@@ -18,11 +18,11 @@
 
 #import "JSQAudioMediaItem.h"
 
-#import "../Views/JSQMessagesMediaPlaceholderView.h"
-#import "../Factories/JSQMessagesMediaViewBubbleImageMasker.h"
+#import "JSQMessagesMediaPlaceholderView.h"
+#import "JSQMessagesMediaViewBubbleImageMasker.h"
 
-#import "../Categories/UIImage+JSQMessages.h"
-#import "../Categories/UIColor+JSQMessages.h"
+#import "UIImage+JSQMessages.h"
+#import "UIColor+JSQMessages.h"
 
 
 @interface JSQAudioMediaItem ()

@@ -12,7 +12,7 @@
 
 #import "JSQMessagesBubbleImageFactory.h"
 
-#import "../Categories/UIImage+JSQMessages.h"
+#import "UIImage+JSQMessages.h"
 
 
 @interface JSQMessagesBubbleImageFactoryTests : XCTestCase

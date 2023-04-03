@@ -19,7 +19,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#import "../Model/JSQMessagesBubbleImage.h"
+#import "JSQMessagesBubbleImage.h"
 
 /**
  *  `JSQMessagesBubbleImageFactory` is a factory that provides a means for creating and styling 

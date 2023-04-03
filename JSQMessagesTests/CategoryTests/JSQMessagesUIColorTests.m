@@ -10,7 +10,7 @@
 
 #import <XCTest/XCTest.h>
 
-#import "../Categories/UIColor+JSQMessages.h"
+#import "UIColor+JSQMessages.h"
 
 
 @interface JSQMessagesUIColorTests : XCTestCase

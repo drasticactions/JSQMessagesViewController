@@ -16,7 +16,7 @@
 //  Released under an MIT license: http://opensource.org/licenses/MIT
 //
 
-#import "../Categories/UIImage+JSQMessages.h"
+#import "UIImage+JSQMessages.h"
 
 #import "NSBundle+JSQMessages.h"
 

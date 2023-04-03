@@ -18,26 +18,26 @@
 
 #import "JSQMessagesViewController.h"
 
-#import "../Layout/JSQMessagesCollectionViewFlowLayoutInvalidationContext.h"
+#import "JSQMessagesCollectionViewFlowLayoutInvalidationContext.h"
 
-#import "../Model/JSQMessageData.h"
-#import "../Model/JSQMessageBubbleImageDataSource.h"
-#import "../Model/JSQMessageAvatarImageDataSource.h"
+#import "JSQMessageData.h"
+#import "JSQMessageBubbleImageDataSource.h"
+#import "JSQMessageAvatarImageDataSource.h"
 
-#import "../Views/JSQMessagesCollectionViewCellIncoming.h"
-#import "../Views/JSQMessagesCollectionViewCellOutgoing.h"
+#import "JSQMessagesCollectionViewCellIncoming.h"
+#import "JSQMessagesCollectionViewCellOutgoing.h"
 
-#import "../Views/JSQMessagesTypingIndicatorFooterView.h"
-#import "../Views/JSQMessagesLoadEarlierHeaderView.h"
+#import "JSQMessagesTypingIndicatorFooterView.h"
+#import "JSQMessagesLoadEarlierHeaderView.h"
 
-#import "../Views/JSQMessagesToolbarContentView.h"
-#import "../Views/JSQMessagesInputToolbar.h"
-#import "../Views/JSQMessagesComposerTextView.h"
+#import "JSQMessagesToolbarContentView.h"
+#import "JSQMessagesInputToolbar.h"
+#import "JSQMessagesComposerTextView.h"
 
-#import "../Categories/NSString+JSQMessages.h"
-#import "../Categories/UIColor+JSQMessages.h"
-#import "../Categories/UIDevice+JSQMessages.h"
-#import "../Categories/NSBundle+JSQMessages.h"
+#import "NSString+JSQMessages.h"
+#import "UIColor+JSQMessages.h"
+#import "UIDevice+JSQMessages.h"
+#import "NSBundle+JSQMessages.h"
 
 #import <objc/runtime.h>
 

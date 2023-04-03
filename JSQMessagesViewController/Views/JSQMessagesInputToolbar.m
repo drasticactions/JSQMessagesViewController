@@ -18,13 +18,13 @@
 
 #import "JSQMessagesInputToolbar.h"
 
-#import "../Views/JSQMessagesComposerTextView.h"
+#import "JSQMessagesComposerTextView.h"
 
-#import "../Factories/JSQMessagesToolbarButtonFactory.h"
+#import "JSQMessagesToolbarButtonFactory.h"
 
-#import "../Categories/UIColor+JSQMessages.h"
-#import "../Categories/UIImage+JSQMessages.h"
-#import "../Categories/UIView+JSQMessages.h"
+#import "UIColor+JSQMessages.h"
+#import "UIImage+JSQMessages.h"
+#import "UIView+JSQMessages.h"
 
 static void * kJSQMessagesInputToolbarKeyValueObservingContext = &kJSQMessagesInputToolbarKeyValueObservingContext;
 

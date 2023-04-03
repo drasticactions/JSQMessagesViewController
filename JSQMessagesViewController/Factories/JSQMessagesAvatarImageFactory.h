@@ -19,7 +19,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#import "../Model/JSQMessagesAvatarImage.h"
+#import "JSQMessagesAvatarImage.h"
 
 /**
  *  `JSQMessagesAvatarImageFactory` is a factory that provides a means for creating and styling

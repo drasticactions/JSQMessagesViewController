@@ -18,7 +18,7 @@
 
 #import "NSBundle+JSQMessages.h"
 
-#import "../Controllers/JSQMessagesViewController.h"
+#import "JSQMessagesViewController.h"
 
 @implementation NSBundle (JSQMessages)
 
