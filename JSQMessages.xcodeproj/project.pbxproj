@@ -119,7 +119,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0312D08929148B6E0059EE32 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		54271E3A1C90469100294290 /* jsq_messages_sample.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = jsq_messages_sample.m4a; sourceTree = "<group>"; };
 		54271E3C1C905B9200294290 /* JSQAudioMediaItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSQAudioMediaItem.h; sourceTree = "<group>"; };
 		54271E3D1C905B9200294290 /* JSQAudioMediaItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSQAudioMediaItem.m; sourceTree = "<group>"; };
@@ -320,7 +319,6 @@
 			isa = PBXGroup;
 			children = (
 				886C33FE19F45E30006B4997 /* JSQMessagesViewController.podspec */,
-				0312D08929148B6E0059EE32 /* Package.swift */,
 				88A25F3E19D8E01A00924534 /* JSQMessagesViewController */,
 				636A8663AEEE5C37B65C515D /* Frameworks */,
 				88A25F2B19D8DF2500924534 /* JSQMessagesDemo */,
